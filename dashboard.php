@@ -251,5 +251,58 @@ foreach ($data8 as $d8)
         </div> 
     <!-- Widgets End -->
 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <strong class="card-title">Stok Obat Yang Kurang</strong>
+                    </div>
+                    <div class="card-body">
+
+                        <table id="tabel_data_stok_obat" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Kode</th>
+                                    <th>Kode Pemasokan</th>
+                                    <th>Nama Obat</th>
+                                    <th>Tanggal Kadaluarsa</th>
+                                    <th>Stok</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                    $data = mysqli_query($koneksi," SELECT s.id_stok_obat , p.id_pemasokan , o.id_obat , o.nm_obat , s.tgl_exp , s.jumlah_stok
+                                                                    FROM stok_obat s, pemasokan p , obat o
+                                                                    WHERE s.id_pemasokan = p.id_pemasokan && s.id_obat = o.id_obat && s.jumlah_stok > 0 && s.jumlah_stok <= 5
+                                                                    ORDER BY s.id_stok_obat DESC;
+                                                        ");
+                                    foreach ($data as $d) 
+                                    {
+                                ?>
+                                        <tr>
+                                            <td><?php echo $d["id_stok_obat"]; ?></td>
+                                            <td><?php echo $d["id_pemasokan"]; ?></td>
+                                            <td><?php echo $d["nm_obat"]; ?></td>
+                                            <td><?php echo $d["tgl_exp"]; ?></td>
+                                            <td><?php echo $d["jumlah_stok"]; ?></td>
+                                        </tr>
+                                <?php 
+                                    }
+                                ?>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+
     </div><!-- .animated -->
 </div><!-- .content -->
+
+<script type="text/javascript">
+        $(document).ready(function() {
+          $('#tabel_data_stok_obat').DataTable();
+          
+      } );
+</script>
