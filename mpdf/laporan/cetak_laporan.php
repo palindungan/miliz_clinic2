@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <link href="../head/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="../head/bootstrap.min.js"></script>
@@ -39,23 +38,63 @@
 
         foreach ($data1 as $d1) 
             {
-                $total_pemasokan = $d1["total_pemasokan"]; 
+                if (isset($d1["total_pemasokan"])) 
+                {
+                    $total_pemasokan = $d1["total_pemasokan"]; 
+                }
+                else
+                {
+                    $total_pemasokan = 0;
+                }
+                
             } 
         foreach ($data2 as $d2) 
             {
-                $total_obat = $d2["total_obat"]; 
+                if (isset($d2["total_obat"])) 
+                {
+                    $total_obat = $d2["total_obat"]; 
+                }
+                else
+                {
+                    $total_obat = 0;
+                }
+                
             } 
         foreach ($data3 as $d3) 
             {
-                $total_perawatan = $d3["total_perawatan"];
+                if (isset($d3["total_perawatan"])) 
+                {
+                    $total_perawatan = $d3["total_perawatan"];
+                }
+                else
+                {
+                    $total_perawatan = 0;
+                }
+                
             }
         foreach ($data4 as $d4) 
             {
-                $total_konsultasi = $d4["total_konsultasi"];
+                if (isset($d4["total_konsultasi"])) 
+                {
+                    $total_konsultasi = $d4["total_konsultasi"];
+                }
+                else
+                {
+                    $total_konsultasi = 0;
+                }
+                
             } 
         foreach ($data5 as $d5) 
             {
-                $total_transaksi = $d5["total_transaksi"];
+                if (isset($d5["total_transaksi"])) 
+                {
+                    $total_transaksi = $d5["total_transaksi"];
+                }
+                else
+                {
+                    $total_transaksi = 0;
+                }
+                
             } 
     ?>
     
@@ -105,7 +144,7 @@
                                         </div>
 
                                         <div class="col col-md-9 text-right">
-                                            <strong>Rp. <?php echo $total_transaksi; ?></strong>
+                                            <strong>Rp. <?php echo number_format($total_transaksi,2,",","."); ?></strong>
                                         </div>
 
                                     </div>
@@ -123,17 +162,17 @@
 
                                             <tr>
                                                 <td class="">Penjualan Obat</td>
-                                                <td class="text-right">Rp. <?php echo $total_obat; ?></td>
+                                                <td class="text-right">Rp. <?php echo number_format($total_obat,2,",","."); ?></td>
                                             </tr>
                                         
                                             <tr>
                                                 <td class="">Perawatan</td>
-                                                <td class="text-right">Rp. <?php echo $total_perawatan; ?></td>
+                                                <td class="text-right">Rp. <?php echo number_format($total_perawatan,2,",","."); ?></td>
                                             </tr>
                                         
                                             <tr>
                                                 <td class="">Konsultasi</td>
-                                                <td class="text-right">Rp. <?php echo $total_konsultasi; ?></td>
+                                                <td class="text-right">Rp. <?php echo number_format($total_konsultasi,2,",","."); ?></td>
                                             </tr>
 
                                         <!-- Detail pemasukan -->
@@ -148,7 +187,7 @@
                                             <strong>PENGELUARAN</strong>
                                         </div>
                                         <div class="col col-md-9 text-right">
-                                            <strong>Rp. <?php echo $total_pemasokan; ?></strong>
+                                            <strong>Rp. <?php echo number_format($total_pemasokan,2,",","."); ?></strong>
                                         </div>
                                     </div>
 
@@ -164,7 +203,7 @@
                                         <!-- Detail Pengeluaran -->
                                             <tr>
                                                 <td class="">Pemasokan</td>
-                                                <td class="text-right">Rp. <?php echo $total_pemasokan; ?></td>
+                                                <td class="text-right">Rp. <?php echo number_format($total_pemasokan,2,",","."); ?></td>
                                             </tr>
                                         <!-- Detail Pengeluaran -->
 
@@ -179,7 +218,7 @@
                                         <strong>Total Pemasukan</strong>
                                     </div>
                                     <div class="col">
-                                        <strong>: Rp. <?php echo $total_transaksi; ?></strong>
+                                        <strong>: Rp. <?php echo number_format($total_transaksi,2,",","."); ?></strong>
                                     </div>
 
                                 </div>
@@ -188,7 +227,7 @@
                                         <strong>Total Pengeluaran</strong>
                                     </div>
                                     <div class="col">
-                                        <strong>: Rp. <?php echo $total_pemasokan; ?></strong>
+                                        <strong>: Rp. <?php echo number_format($total_pemasokan,2,",","."); ?></strong>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -196,7 +235,7 @@
                                         <strong>Total Laba(Rugi)</strong>
                                     </div>
                                     <div class="col">
-                                        <strong>: Rp. <?php echo $total_transaksi-$total_pemasokan; ?></strong>
+                                        <strong>: Rp. <?php echo number_format($total_transaksi-$total_pemasokan,2,",","."); ?></strong>
                                     </div>
                                 </div>
                             </div>             
