@@ -12,7 +12,7 @@
 
                     <div class="user-area dropdown float-right">
                         <a href=""><i class=" fa fa-user-circle">&nbsp;<?php echo $_SESSION["username"]; ?>&nbsp;&nbsp;</i></a>
-                        <a href="logout.php" onclick="return confirm('Ingin Keluar ?');" class="btn btn-danger mb-1"><i class="fa fa-power-off">&nbsp;Logout</i></a>
+                        <a href="logout.php" onclick="return confirm('Ingin Keluar ?');" class="btn btn-danger mb-1"><i class="fa fa-power-off">&nbsp;Keluar</i></a>
                     </div> 
                 </div>  
             </div>
