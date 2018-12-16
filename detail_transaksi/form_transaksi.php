@@ -16,8 +16,8 @@
         <div class="col-md-3">
             <div class="form-group">
                 <label>Cari Pasien</label>
-                <select name="id_pasien" id="id_pasien" data-placeholder="Pilih Obat..." class="form-control standardSelect" tabindex="1" required="">
-                    <option value="" label="default"></option>
+                <select name="id_pasien" id="id_pasien" class="form-control selectpicker" data-live-search="true" required="">
+                    <option value="">Pilih Pasien</option>
                     <?php
                         $data2 = mysqli_query($koneksi,"select p.id_pasien, p.nm_pasien 
                                                         from pasien p

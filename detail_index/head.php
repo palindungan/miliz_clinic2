@@ -19,6 +19,4 @@
 
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
     
-    <!-- <link rel="stylesheet" href="css/bootstrap-select.css"> -->
-
-    <link rel="stylesheet" href="template/assets/css/lib/chosen/chosen.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
