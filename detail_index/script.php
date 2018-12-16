@@ -26,3 +26,14 @@
 <script src="template/assets/js/lib/flot-chart/jquery.flot.spline.js"></script>
 
 <script src="template/assets/js/widgets.js"></script>
+
+
+<script src="template/assets/js/lib/chosen/chosen.jquery.min.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        jQuery(".standardSelect").chosen({
+            no_results_text: "Oops, nothing found!",
+            width: "100%"
+        });
+    });
+</script>
