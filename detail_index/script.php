@@ -26,3 +26,4 @@
 <script src="template/assets/js/lib/flot-chart/jquery.flot.spline.js"></script>
 
 <script src="template/assets/js/widgets.js"></script>
+

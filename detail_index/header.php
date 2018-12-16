@@ -11,15 +11,8 @@
                 <div class="header-menu"> 
 
                     <div class="user-area dropdown float-right">
-                        <a href="" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="template/images/admin.png" alt="User Avatar">
-                            &nbsp;
-                            <?php echo $_SESSION["username"]; ?>
-                        </a>
-
-                        <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="logout.php"><i class="fa fa-power-off"></i>Logout</a>
-                        </div>
+                        <a href=""><i class=" fa fa-user-circle">&nbsp;<?php echo $_SESSION["username"]; ?>&nbsp;&nbsp;</i></a>
+                        <a href="logout.php" onclick="return confirm('Ingin Keluar ?');" class="btn btn-danger mb-1"><i class="fa fa-power-off">&nbsp;Logout</i></a>
                     </div> 
                 </div>  
             </div>
