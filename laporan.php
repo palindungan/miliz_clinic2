@@ -53,7 +53,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="input-group">
-                                    <button type="submit" class="btn btn-info mb-1">VIEW</button>
+                                    <button type="submit" class="btn btn-info mb-1"><i class="fa fa-print"></i> CETAK</button>
                                 </div>
                             </div>
                         </form>

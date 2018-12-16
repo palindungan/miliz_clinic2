@@ -9,7 +9,7 @@
             <th>Bayar</th>
             <th>Kembalian</th>
             <th>Tanggal Pemasokan</th>
-            <th></th>
+            <th>Opsi</th>
         </tr>
     </thead>
     <tbody>
@@ -34,12 +34,13 @@
                     <td><?php echo $d["tgl_pemasokan"]; ?></td>
                     <td>
                         
-                    <a href="mpdf/pemasokan/view_pemasokan.php?id=<?php echo $d["id_pemasokan"]; ?>" class="btn btn-info mb-1" target="_black">View</a>
+                    <a href="mpdf/pemasokan/view_pemasokan.php?id=<?php echo $d["id_pemasokan"]; ?>" class="btn btn-info mb-1" target="_black"><i class="fa fa-search"></i>
+                    </a>
 
-                    <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_pemasokan"]; ?>">Edit
+                    <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_pemasokan"]; ?>"><i class="fa fa-pencil"></i>
                     </button>
 
-                    <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_pemasokan"]; ?>" name="<?php echo $d["id_pemasokan"]; ?>" >Hapus
+                    <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_pemasokan"]; ?>" name="<?php echo $d["id_pemasokan"]; ?>" ><i class="fa fa-trash"></i>
                     </button>
 
                     </td>

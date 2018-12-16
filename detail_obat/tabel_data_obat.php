@@ -1,6 +1,6 @@
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#obat_modal">Tambah Obat</button> <br><br>
+<button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#obat_modal"><i class="fa fa-plus-circle"></i> Obat</button> <br><br>
 <!-- Button trigger modal -->
 
 <table id="tabel_data_obat" class="table table-striped table-bordered">
@@ -31,9 +31,9 @@
                     <td><?php echo $d["hrg_beli"]; ?></td>
                     <td><?php echo $d["hrg_jual"]; ?></td>
                     <td>
-                      <button type="button" class="btn btn-warning mb-1 click_edit_obat" data-toggle="modal" data-target="#edit_modal_2" id="<?php echo $d["id_obat"]; ?>">Edit</button>
+                      <button type="button" class="btn btn-warning mb-1 click_edit_obat" data-toggle="modal" data-target="#edit_modal_2" id="<?php echo $d["id_obat"]; ?>"><i class="fa fa-pencil"></i></button>
 
-                      <button type="button" class="btn btn-danger mb-1 hapus_obat" id="<?php echo $d["id_obat"]; ?>" name="<?php echo $d["nm_obat"]; ?>" >Hapus
+                      <button type="button" class="btn btn-danger mb-1 hapus_obat" id="<?php echo $d["id_obat"]; ?>" name="<?php echo $d["nm_obat"]; ?>" ><i class="fa fa-trash"></i>
                       </button>
                     </td>
                 </tr>

@@ -100,7 +100,7 @@
         <div class="col-md-3">
             <div class="form-group">
                 <input type="hidden" name="btn_action" id="btn_action" />
-                <input type="submit" name="action" id="action" class="btn btn-info" value="SIMPAN" />
+                <button type="submit" name="action" id="action" class="btn btn-info"><i class="fa fa-check-circle"></i> SUBMIT</button>
             </div>
         </div>
     </div>
@@ -116,7 +116,6 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $('#action').val('SIMPAN');
         $('#btn_action').val('Add');
         $('#span_product_details').html('');
 
@@ -143,11 +142,11 @@
 
             if(count == '')
             {
-                html += '<button type="button" name="add_more" id="add_more" class="btn btn-success btn-xs">Tambah</button>';
+                html += '<button type="button" name="add_more" id="add_more" class="btn btn-success btn-xs"><i class="fa fa-plus-circle"></i></button>';
             }
             else
             {
-                html += '<button type="button" name="remove" id="'+count+'" class="btn btn-danger btn-xs remove">Hapus</button>';
+                html += '<button type="button" name="remove" id="'+count+'" class="btn btn-danger btn-xs remove"><i class="fa fa-trash-o"></i></button>';
             }
             html += '</div>';
             html += '</div><br/></span>';

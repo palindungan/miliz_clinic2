@@ -35,7 +35,8 @@
                     <td>
                         
                         <!-- tombol view -->
-                        <a href="mpdf/transaksi/view_transaksi.php?id=<?php echo $d["id_transaksi"]; ?>" class="btn btn-info mb-1" target="_black"><i class="fa fa-search"></i></a>
+                        <a href="mpdf/transaksi/view_transaksi.php?id=<?php echo $d["id_transaksi"]; ?>" class="btn btn-info mb-1" target="_black"><i class="fa fa-search"></i>
+                        </a>
                         
                         <!-- tombol edit -->
                         <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_transaksi"]; ?>"><i class="fa fa-pencil"></i>

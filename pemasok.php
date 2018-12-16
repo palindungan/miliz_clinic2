@@ -37,7 +37,7 @@
                     <div class="card-body">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#tambah_modal" >Tambah Pemasok</button><br><br>
+                        <button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#tambah_modal" ><i class="fa fa-plus-circle"></i> Pemasok</button><br><br>
                         <!-- Button trigger modal -->
 
                         <table id="tabel" class="table table-striped table-bordered">
@@ -64,10 +64,10 @@
                                             <td><?php echo $d["no_hp"]; ?></td>
                                             <td>
 
-                                              <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_pemasok"]; ?>">Edit
+                                              <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_pemasok"]; ?>"><i class="fa fa-pencil"></i>
                                               </button>
 
-                                              <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_pemasok"]; ?>" name="<?php echo $d["nm_pemasok"]; ?>" >Hapus
+                                              <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_pemasok"]; ?>" name="<?php echo $d["nm_pemasok"]; ?>" ><i class="fa fa-trash"></i>
                                               </button>
 
                                             </td>

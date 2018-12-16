@@ -26,9 +26,10 @@
                     <td><?php echo $d["tgl_exp"]; ?></td>
                     <td><?php echo $d["jumlah_stok"]; ?></td>
                     <td>
-                      <button type="button" class="btn btn-warning mb-1 click_edit_stok" data-toggle="modal" data-target="#edit_modal_2" id="<?php echo $d["id_stok_obat"]; ?>">Edit</button>
+                      <button type="button" class="btn btn-warning mb-1 click_edit_stok" data-toggle="modal" data-target="#edit_modal_2" id="<?php echo $d["id_stok_obat"]; ?>"><i class="fa fa-pencil"></i>
+                      </button>
 
-                      <button type="button" class="btn btn-danger mb-1 hapus_stok_obat" id="<?php echo $d["id_stok_obat"]; ?>" name="<?php echo $d["nm_obat"]." Kode Stok = ".$d["id_stok_obat"]; ?>" >Hapus
+                      <button type="button" class="btn btn-danger mb-1 hapus_stok_obat" id="<?php echo $d["id_stok_obat"]; ?>" name="<?php echo $d["nm_obat"]." Kode Stok = ".$d["id_stok_obat"]; ?>" ><i class="fa fa-trash"></i>
                       </button>
                     </td>
                 </tr>

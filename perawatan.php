@@ -37,7 +37,7 @@
                     <div class="card-body">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#jenis_obat_modal">Tambah Perawatan</button><br><br>
+                        <button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#jenis_obat_modal"><i class="fa fa-plus-circle"></i> Perawatan</button><br><br>
                         <!-- Button trigger modal --> 
 
 
@@ -61,10 +61,10 @@
                                             <td><?php echo $d["nm_perawatan"]; ?></td>
                                             <td><?php echo $d["hrg_perawatan"]; ?></td>
                                             <td>
-                                                <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_perawatan"]; ?>">Edit
+                                                <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_perawatan"]; ?>"><i class="fa fa-pencil"></i>
                                                 </button>
 
-                                                <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_perawatan"]; ?>" name="<?php echo $d["nm_perawatan"]; ?>" >Hapus
+                                                <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_perawatan"]; ?>" name="<?php echo $d["nm_perawatan"]; ?>" ><i class="fa fa-trash"></i>
                                                 </button>
                                             </td>
                                         </tr>
