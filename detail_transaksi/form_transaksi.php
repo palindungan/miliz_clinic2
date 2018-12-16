@@ -67,7 +67,7 @@
         </div>
         <div class="col-md-1"> 
             <div class="form-group">
-                <button type="button" name="add_more" id="add_more" class="btn btn-success btn-xs">Tambah</button> 
+                <button type="button" name="add_more" id="add_more" class="btn btn-success btn-xs"><i class="fa fa-plus-circle"></i></button> 
             </div>
         </div>              
     </div>
@@ -123,7 +123,7 @@
         <div class="col-md-3">
             <div class="form-group">
                 <input type="hidden" name="btn_action" id="btn_action" />
-                <input type="submit" name="action" id="action" class="btn btn-info" value="SUBMIT" />
+                <button type="submit" name="action" id="action" class="btn btn-info"><i class="fa fa-check-circle"></i> SUBMIT</button>
             </div>
         </div>
     </div>
@@ -158,7 +158,7 @@
             html += '<input type="number" id="qty_obat" name="qty_obat[]" placeholder="QTY" class="qty cek_stok form-control" required="" max="2000000000">';
             html += '</div>';
             html += '<div class="col-md-1">';
-            html += '<button type="button" name="remove" id="'+count1+'" class="btn btn-danger btn-xs remove">Hapus</button>';
+            html += '<button type="button" name="remove" id="'+count1+'" class="btn btn-danger btn-xs remove"><i class="fa fa-trash-o"></i></button>';
             html += '</div>';
             html += '</div><br/></span>';
 
@@ -181,7 +181,7 @@
             html += '<input type="number" id="qty_perawatan" name="qty_perawatan[]" placeholder="QTY" class="qty form-control" required="" max="2000000000">';
             html += '</div>';
             html += '<div class="col-md-1">';
-            html += '<button type="button" name="remove" id="'+count2+'" class="btn btn-danger btn-xs remove">Hapus</button>';
+            html += '<button type="button" name="remove" id="'+count2+'" class="btn btn-danger btn-xs remove"><i class="fa fa-trash-o"></i></button>';
             html += '</div>';
             html += '</div><br/></span>';
 
@@ -204,7 +204,7 @@
             html += '<input type="number" id="qty_konsultasi" name="qty_konsultasi[]" placeholder="QTY" class="qty form-control" required="" max="2000000000">';
             html += '</div>';
             html += '<div class="col-md-1">';
-            html += '<button type="button" name="remove" id="'+count3+'" class="btn btn-danger btn-xs remove">Hapus</button>';
+            html += '<button type="button" name="remove" id="'+count3+'" class="btn btn-danger btn-xs remove"><i class="fa fa-trash-o"></i></button>';
             html += '</div>';
             html += '</div><br/></span>';
 

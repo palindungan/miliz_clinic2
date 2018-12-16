@@ -33,13 +33,16 @@
                     <td><?php echo $d["kembalian"]; ?></td>
                     <td><?php echo $d["tgl_transaksi"]; ?></td>
                     <td>
-
-                        <a href="mpdf/transaksi/view_transaksi.php?id=<?php echo $d["id_transaksi"]; ?>" class="btn btn-info mb-1" target="_black">View</a>
-
-                        <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_transaksi"]; ?>">Edit
+                        
+                        <!-- tombol view -->
+                        <a href="mpdf/transaksi/view_transaksi.php?id=<?php echo $d["id_transaksi"]; ?>" class="btn btn-info mb-1" target="_black"><i class="fa fa-search"></i></a>
+                        
+                        <!-- tombol edit -->
+                        <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_transaksi"]; ?>"><i class="fa fa-pencil"></i>
                         </button>
-
-                        <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_transaksi"]; ?>" name="<?php echo $d["id_transaksi"]; ?>" >Hapus
+                        
+                        <!-- tombol hapus -->
+                        <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_transaksi"]; ?>" name="<?php echo $d["id_transaksi"]; ?>" ><i class="fa fa-trash"></i>
                         </button>
 
                     </td>

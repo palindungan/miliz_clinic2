@@ -37,7 +37,7 @@
                     <div class="card-body">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#daftar_modal" >Pendaftaran Pasien</button><br><br>
+                        <button type="button" class="btn btn-success mb-1" data-toggle="modal" data-target="#daftar_modal" ><i class="fa fa-user-plus"></i> Pasien</button><br><br>
                         <!-- Button trigger modal -->
 
                         <table id="tabel" class="table table-striped table-bordered">
@@ -70,10 +70,10 @@
                                             <td><?php echo $d["tgl_reg"]; ?></td>
                                             <td>
 
-                                              <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_pasien"]; ?>">Edit
+                                              <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_pasien"]; ?>"><i class="fa fa-pencil"></i>
                                               </button>
 
-                                              <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_pasien"]; ?>" name="<?php echo $d["nm_pasien"]; ?>" >Hapus
+                                              <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_pasien"]; ?>" name="<?php echo $d["nm_pasien"]; ?>" ><i class="fa fa-trash"></i>
                                               </button>
 
                                             </td>
