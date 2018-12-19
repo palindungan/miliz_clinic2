@@ -39,8 +39,7 @@
                         </a>
                         
                         <!-- tombol edit -->
-                        <button type="button" class="btn btn-warning mb-1 click_edit" data-toggle="modal" data-target="#edit_modal" id="<?php echo $d["id_transaksi"]; ?>"><i class="fa fa-pencil"></i>
-                        </button>
+
                         
                         <!-- tombol hapus -->
                         <button type="button" class="btn btn-danger mb-1 hapus" id="<?php echo $d["id_transaksi"]; ?>" name="<?php echo $d["id_transaksi"]; ?>" ><i class="fa fa-trash"></i>

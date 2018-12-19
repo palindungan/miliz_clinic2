@@ -122,7 +122,7 @@
                             <label class=" form-control-label" for="almt_pemasok">Alamat</label>
                         </div>
                         <div class="col-12 col-md-9">
-                            <input type="text" id="almt_pemasok" name="almt_pemasok" placeholder="Alamat" class="form-control" required="" maxlength="150" oninvalid="this.setCustomValidity('Mohon Isikan Alamat')" oninput="setCustomValidity('')">
+                            <input type="text" id="almt_pemasok" name="almt_pemasok" placeholder="Alamat" class="form-control" required="" maxlength="200" oninvalid="this.setCustomValidity('Mohon Isikan Alamat')" oninput="setCustomValidity('')">
                         </div>
                     </div>
                     <div class="row form-group">
