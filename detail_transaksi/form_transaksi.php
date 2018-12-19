@@ -28,7 +28,7 @@
                     ?>
 
                     <option value="<?php echo $d2["id_pasien"]; ?>" >
-                        <?php echo $d2["nm_pasien"]; ?>
+                        <?php echo $d2["nm_pasien"]." (".$d2["id_pasien"].") "; ?>
                     </option>
 
                     <?php 
